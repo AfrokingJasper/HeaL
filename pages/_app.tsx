@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
+import Layout from "@/components/home/layout/layout";
 
 import { Alata, Josefin_Sans } from "next/font/google";
 
@@ -9,11 +10,13 @@ const roboto = Josefin_Sans({
   subsets: ["latin"],
 });
 
+// className={roboto.className}
+
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={roboto.className}>
+    <Layout>
       <Component {...pageProps} />
-    </main>
+    </Layout>
   );
 }
 

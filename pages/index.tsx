@@ -1,14 +1,17 @@
-import Hero from "@/components/home/hero";
+// import Hero from "@/components/home/hero/hero";
 import React, { Fragment } from "react";
 import Head from "next/head";
+import Stories from "@/components/home/stories/stories";
 
 const HomePage = () => {
   return (
     <Fragment>
       <Head>
         <title>HeaL</title>
+        <meta />
       </Head>
-      <Hero />
+      {/* <Hero /> */}
+      <Stories />
     </Fragment>
   );
 };
