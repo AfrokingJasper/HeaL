@@ -11,30 +11,39 @@ const MobileNav = () => {
   return (
     <nav
       className={`${
-        isActive ? styles.animate : styles.hide
-      } flex flex-col gap-5 overflow-hidden bg-[var(--primary-color)] text-[var(--bg-color)] pb-2 relative  md:hidden px-5`}
+        isActive ? styles.show : styles.hide
+      } flex flex-col gap-5 overflow-hidden bg-[var(--primary-color)] text-[var(--tertiary-color)] pb-2 relative  md:hidden px-5`}
     >
-      <div
+      {/* menu button */}
+      <button
         onClick={showMobileNavs}
-        className="h-[7vh] flex self-end gap-2 items-center border-b-2 border-[var(--secondary-color)] cursor-pointer"
+        className="hover:scale-110 flex self-end gap-2 items-center border-b-2 border-[var(--secondary-color)] cursor-pointer"
       >
-        <p className="text-xl">Menu</p>
-        <span className="text-5xl text-[var(--secondary-color)]">+</span>
-      </div>
-      <ul className="flex flex-col items-center gap-5 text-lg self-center">
-        <li className="text-2xl font-semibold border-b-2 border-b-[var(--secondary-color)]">
+        {!isActive && <p className="text-xl">Menu</p>}
+        <span
+          className={`${
+            isActive && "-rotate-45 scale-150 mr-2"
+          } text-5xl transition-all duration-200 text-[var(--secondary-color)]`}
+        >
+          +
+        </span>
+      </button>
+
+      {/* nav lists */}
+      <ul className="link flex flex-col items-center gap-5 text-lg self-center">
+        <li className={`text-2xl font-semibold ${styles["mobile__nav-list"]}`}>
           <Link href="/">HeaL</Link>
         </li>
-        <li className="border-b-2 border-b-[var(--secondary-color)]">
+        <li className={styles["mobile__nav-list"]}>
           <Link href="/">Love</Link>
         </li>
-        <li className="border-b-2 border-b-[var(--secondary-color)]">
+        <li className={styles["mobile__nav-list"]}>
           <Link href="/">Motivation</Link>
         </li>
-        <li className="border-b-2 border-b-[var(--secondary-color)]">
+        <li className={styles["mobile__nav-list"]}>
           <Link href="/">Hope</Link>
         </li>
-        <li className="border-b-2 border-b-[var(--secondary-color)]">
+        <li className={styles["mobile__nav-list"]}>
           <Link href="/">Depression</Link>
         </li>
       </ul>

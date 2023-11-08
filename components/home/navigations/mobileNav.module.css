@@ -1,4 +1,12 @@
-.animate {
+/* .show > .mobile__nav {
+  @apply opacity-100 transition-all duration-300;
+} */
+
+.mobile__nav-list {
+  @apply border-b-2 border-b-[var(--secondary-color)];
+}
+
+.show {
   animation: nav-show 0.3s ease-out forwards;
 }
 .hide {
