@@ -19,6 +19,10 @@ body {
   color: var(--primary-color);
 }
 
+section {
+  @apply mb-20;
+}
+
 h1 {
   @apply text-6xl font-semibold;
 }
@@ -36,8 +40,16 @@ button {
   @apply hover:scale-110 transition-all duration-200;
 }
 
+.read {
+  @apply px-3 py-2 bg-[var(--secondary-color)] mb-2 w-40 rounded-md self-center hover:scale-110 transition-all duration-200;
+}
+
 @media (max-width: 650px) {
   h1 {
-    @apply text-5xl;
+    @apply text-4xl;
+  }
+
+  h2 {
+    @apply text-3xl;
   }
 }
