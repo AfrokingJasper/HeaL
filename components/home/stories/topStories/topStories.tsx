@@ -7,8 +7,8 @@ import TopStoriesList from "./topStoriesList";
 const TopStories = () => {
   return (
     <section className="flex flex-col lg:flex-row gap-5 items-center lg:items-start justify-between mb-20">
-      <div className="flex relative flex-col w-[100%] lg:w-[48%] text-center gap-2 rounded-md bg-[var(--primary-color)]">
-        <h1 className=" absolute text-[var(--secondary-color)] -top-7 right-0 shadow-lg shadow-[var(--secondary-color)]">
+      <div className="flex relative flex-col w-[100%] lg:w-[48%] text-center gap-2 rounded-md bg-primary">
+        <h1 className=" absolute text-secondary -top-7 right-0 shadow-lg shadow-secondary">
           TOP FAVORITE
         </h1>
         <Image
@@ -29,8 +29,8 @@ const TopStories = () => {
           </Link>
         </div>
       </div>
-      <div className="w-[100%] lg:w-[45%] bg-[var(--primary-color)] h-auto rounded-md py-4">
-        <h4 className="px-10 text-[var(--secondary-color)]">Top stories</h4>
+      <div className="w-[100%] lg:w-[45%] bg-primary h-auto rounded-md py-4">
+        <h4 className="px-10 text-secondary">Top stories</h4>
 
         {/* top story list */}
         <ul className="flex flex-col gap-4 px-2 py-4">

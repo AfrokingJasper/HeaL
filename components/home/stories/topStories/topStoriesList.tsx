@@ -7,7 +7,7 @@ import { BiCommentDetail } from "react-icons/bi";
 const TopStoriesList = () => {
   return (
     <li className="flex gap-4 md:gap-7 ">
-      <span className="text-sm flex items-center justify-center w-5 h-5 bg-[#fff5f5] text-[var(--secondary-color)] font-bold rounded-full mt-2">
+      <span className="text-sm flex items-center justify-center w-5 h-5 bg-[#fff5f5] text-secondary font-bold rounded-full mt-2">
         1
       </span>
       <Link
@@ -22,11 +22,11 @@ const TopStoriesList = () => {
           alt="test image"
         />
         <div className="flex flex-col  gap-1 mb-2">
-          <h4 className="text-[0.9rem] md:text-xl -mt-2 hover:underline">
+          <h4 className="text-[0.95rem] md:text-xl -mt-2 hover:underline">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </h4>
           <div className="flex flex-col gap-1">
-            <p className="uppercase text-[var(--secondary-color)] font-bold">
+            <p className="uppercase text-secondary font-bold">
               fortune oliseyenum
             </p>
             <div className="flex gap-3 items-center">

@@ -1,4 +1,3 @@
-// import Hero from "@/components/home/hero/hero";
 import React, { Fragment } from "react";
 import Head from "next/head";
 import Stories from "@/components/home/stories/stories";

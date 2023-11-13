@@ -1,0 +1,3 @@
+.footer__links {
+  @apply hover:text-secondary hover:scale-110;
+}

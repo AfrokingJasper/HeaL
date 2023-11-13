@@ -12,18 +12,18 @@ const MobileNav = () => {
     <nav
       className={`${
         isActive ? styles.show : styles.hide
-      } flex flex-col gap-5 overflow-hidden bg-[var(--primary-color)] text-[var(--tertiary-color)] pb-2 relative  md:hidden px-5`}
+      } flex flex-col gap-5 overflow-hidden bg-primary text-tertiary pb-2 fixed top-0 z-[1000] right-0 left-0 md:hidden px-5`}
     >
       {/* menu button */}
       <button
         onClick={showMobileNavs}
-        className="hover:scale-110 flex self-end gap-2 items-center border-b-2 border-[var(--secondary-color)] cursor-pointer"
+        className="hover:scale-110 flex self-end gap-2 items-center border-b-2 border-secondary cursor-pointer"
       >
         {!isActive && <p className="text-xl">Menu</p>}
         <span
           className={`${
             isActive && "-rotate-45 scale-150 mr-2"
-          } text-5xl transition-all duration-200 text-[var(--secondary-color)]`}
+          } text-5xl transition-all duration-200 text-secondary`}
         >
           +
         </span>
