@@ -3,7 +3,7 @@
 } */
 
 .mobile__nav-list {
-  @apply border-b-2 border-b-[var(--secondary-color)];
+  @apply border-b-2 border-b-secondary;
 }
 
 .show {

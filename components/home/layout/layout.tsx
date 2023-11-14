@@ -3,6 +3,7 @@ import React, { Fragment } from "react";
 import styles from "./layout.module.css";
 import MobileNav from "../navigations/mobileNav";
 import DesktopNav from "../navigations/desktopNav";
+import Footer from "../footer/footer";
 
 interface Layoutprops {
   children: React.ReactNode;
@@ -18,7 +19,7 @@ const Layout = (props: Layoutprops) => {
 
         {/* heading */}
         <div
-          className={`${styles.header} bg-[var(--secondary-color)] text-[var(--tertiary-color)] flex flex-col items-center justify-center h-44`}
+          className={`${styles.header} mt-[7vh] lg:mt-0 bg-secondary text-tertiary flex flex-col items-center justify-center h-44`}
         >
           <div className="z-10 text-center">
             <h1>HeaL</h1>
@@ -33,9 +34,10 @@ const Layout = (props: Layoutprops) => {
         {/* desktop nav */}
         <DesktopNav />
       </header>
-      <main className="px-5 md:px-40 lg:px-5 xl:px-32 mt-10 text-[var(--tertiary-color)]">
+      <main className="px-5 md:px-40 lg:px-5 xl:px-32 mt-10 text-tertiary">
         {props.children}
       </main>
+      <Footer />
     </Fragment>
   );
 };
