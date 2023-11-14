@@ -41,7 +41,7 @@ button {
 }
 
 .read {
-  @apply px-3 py-2 bg-[var(--secondary-color)] mb-2 w-40 rounded-md self-center hover:scale-110 transition-all duration-200;
+  @apply flex items-center justify-center text-tertiary px-3 py-2 bg-secondary mb-2 w-40 rounded-md self-center hover:scale-110 transition-all duration-200;
 }
 
 @media (max-width: 650px) {
