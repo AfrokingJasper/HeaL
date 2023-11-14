@@ -10,19 +10,19 @@ const DesktopNav = () => {
         </li>
         /
         <li>
-          <Link href="/">Love</Link>
+          <Link href="/section/love">Love</Link>
         </li>
         /
         <li>
-          <Link href="/">Motivation</Link>
+          <Link href="/section/motivation">Motivation</Link>
         </li>
         /
         <li>
-          <Link href="/">Hope</Link>
+          <Link href="/section/hope">Hope</Link>
         </li>
         /
         <li>
-          <Link href="/">Depression</Link>
+          <Link href="/section/depression">Depression</Link>
         </li>
       </ul>
     </nav>

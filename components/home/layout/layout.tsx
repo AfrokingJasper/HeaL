@@ -19,7 +19,7 @@ const Layout = (props: Layoutprops) => {
 
         {/* heading */}
         <div
-          className={`${styles.header} mt-[7vh] lg:mt-0 bg-secondary text-tertiary flex flex-col items-center justify-center h-44`}
+          className={`${styles.header} mt-[7vh] md:mt-0 bg-secondary text-tertiary flex flex-col items-center justify-center h-44`}
         >
           <div className="z-10 text-center">
             <h1>HeaL</h1>
