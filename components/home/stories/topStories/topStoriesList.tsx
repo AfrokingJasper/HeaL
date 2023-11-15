@@ -7,12 +7,12 @@ import { BiCommentDetail } from "react-icons/bi";
 const TopStoriesList = () => {
   return (
     <li className="flex gap-4 md:gap-7 ">
-      <span className="text-sm flex items-center justify-center w-5 h-5 bg-[#fff5f5] text-secondary font-bold rounded-full mt-2">
+      <span className="text-sm flex items-center justify-center w-5 h-5 bg-tertiary p-2 text-secondary font-bold rounded-full mt-2">
         1
       </span>
       <Link
         className="w-full flex gap-2 lg:gap-5 items-start justify-between pr-2 border-b"
-        href="/"
+        href="/hope/234"
       >
         <Image
           className="h-20 w-20"

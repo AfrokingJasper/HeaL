@@ -18,7 +18,7 @@ const TopPosts = () => {
         <div className="px-2 py-2">
           <Link
             className="w-full flex gap-2 lg:gap-5 items-start justify-between pr-2 border-b border-b-primary"
-            href="/"
+            href="/love/12"
           >
             <Image
               className="h-20 w-20"
