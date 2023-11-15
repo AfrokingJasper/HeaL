@@ -6,10 +6,12 @@ const HomePage = () => {
   return (
     <Fragment>
       <Head>
-        <title>HeaL</title>
-        <meta />
+        <title>Welcome to HeaL</title>
+        <meta
+          name="description"
+          content="A Haven Of Heartfelt Expressions And Soulful Words"
+        />
       </Head>
-      {/* <Hero /> */}
       <Stories />
     </Fragment>
   );

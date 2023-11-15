@@ -24,7 +24,7 @@ const TopStories = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
             quaerat?
           </p>
-          <Link href="/" className="read">
+          <Link href="/depression/12" className="read">
             Read More..
           </Link>
         </div>

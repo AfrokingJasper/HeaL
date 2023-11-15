@@ -35,16 +35,16 @@ const MobileNav = () => {
           <Link href="/">HeaL</Link>
         </li>
         <li className={styles["mobile__nav-list"]}>
-          <Link href="/section/love">Love</Link>
+          <Link href="/love">Love</Link>
         </li>
         <li className={styles["mobile__nav-list"]}>
-          <Link href="/section/motivation">Motivation</Link>
+          <Link href="/motivation">Motivation</Link>
         </li>
         <li className={styles["mobile__nav-list"]}>
-          <Link href="/section/hope">Hope</Link>
+          <Link href="/hope">Hope</Link>
         </li>
         <li className={styles["mobile__nav-list"]}>
-          <Link href="/section/depression">Depression</Link>
+          <Link href="/depression">Depression</Link>
         </li>
       </ul>
     </nav>
