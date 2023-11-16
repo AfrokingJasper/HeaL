@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import image from "../../public/heal-1.jpg";
 import { FaTwitter, FaWhatsapp } from "react-icons/fa";
@@ -6,8 +6,10 @@ import { FaFacebookF } from "react-icons/fa6";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import PostComment from "./postComment";
+import CommentForm from "./commentForm";
 
 const PostDetails = () => {
+  const [showComp, setShowComp] = useState("comments");
   const router = useRouter();
   const { slug, postId } = router.query;
 
@@ -93,8 +95,19 @@ const PostDetails = () => {
       </article>
 
       {/* show comment button */}
-      <button className="mt-10 read">Show comment</button>
-      <PostComment />
+      <div className="flex gap-5 self-center">
+        <button onClick={() => setShowComp("comments")} className="mt-10 read">
+          Show comment
+        </button>
+        <button
+          onClick={() => setShowComp("comment-form")}
+          className="mt-10 read"
+        >
+          Add comment
+        </button>
+      </div>
+      {showComp === "comment-form" && <CommentForm />}
+      {showComp === "comments" && <PostComment />}
     </section>
   );
 };

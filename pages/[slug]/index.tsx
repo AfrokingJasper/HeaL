@@ -14,7 +14,7 @@ const PostSection = () => {
         <title>{slug} - HeaL</title>
         <meta name="description" content="all posts tagged Love" />
       </Head>
-      <Section title={slug} />
+      <Section title="Love" />
     </Fragment>
   );
 };
