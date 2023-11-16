@@ -9,7 +9,7 @@ const SectionsList = () => {
     <li className="flex flex-col lg:flex-row gap-4 md:gap-7">
       <Link
         className="w-full flex gap-2 lg:gap-5 items-start pr-2 border-b pb-3"
-        href="/"
+        href="/depression/345"
       >
         <Image
           className="h-20 md:h-40 w-20 md:w-40"

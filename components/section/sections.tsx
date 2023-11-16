@@ -16,7 +16,7 @@ const Section = (props: SectionProps) => {
       {/* heading */}
       <div className="flex flex-col md:items-center w-full text-secondary mb-20">
         <p className="mr-20 md:mr-40">ALL POSTS TAGGED:</p>
-        <h2 className="ml-20">{props.title}</h2>
+        <h2 className="ml-20 uppercase">{props.title}</h2>
       </div>
 
       {/* top posts */}
@@ -41,7 +41,7 @@ const Section = (props: SectionProps) => {
                 <BiCommentDetail />
               </div>
             </div>
-            <Link className="read" href="/">
+            <Link className="read" href="/motivation/123">
               Read More...
             </Link>
           </div>
@@ -67,7 +67,7 @@ const Section = (props: SectionProps) => {
                 <BiCommentDetail />
               </div>
             </div>
-            <Link className="read" href="/">
+            <Link className="read" href="/hope/123">
               Read More...
             </Link>
           </div>

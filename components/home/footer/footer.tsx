@@ -28,10 +28,10 @@ const Footer = () => {
             <Link href="/">Home</Link>
           </li>
           <li className={styles["footer__links"]}>
-            <Link href="/">About Us</Link>
+            <Link href="/about">About Us</Link>
           </li>
           <li className={styles["footer__links"]}>
-            <Link href="/">Contact Us</Link>
+            <Link href="/contact-us">Contact Us</Link>
           </li>
         </ul>
       </nav>
